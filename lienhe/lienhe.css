@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-image: url(anhnen.jpg);
+  }
+  
+  .container {
+    width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    color: white;
+    background-color: #2daf9b;
+    border-radius: 50px;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .content {
+    padding: 20px;
+  }
+  
+  h2 {
+    margin-top: 0;
+  }
+  
+  p {
+    margin-bottom: 10px;
+  }
+  
+  span {
+    color: #2daf9b;
+    background-color: #fff;
+    padding: 3px;
+    border-radius: 5px;
+  }
+  
+  .contact-form {
+    width: 500px;
+    margin: 0 auto;
+  }
+  
+  input {
+    width: 97%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  textarea {
+    width: 97%;
+    height: 100px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  button {
+    width: 97.5%;
+    padding: 5px;
+    background-color: #0804f3;
+    color: #fff;
+    border-radius: 15px ;
+  }
+  div > img {
+    margin:auto;
+    display:flex;
+}

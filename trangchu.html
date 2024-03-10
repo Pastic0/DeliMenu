@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ</title>
+    <link rel="stylesheet" href="trangchu.css">
+    <link rel="icon" href="/img/anhnen.jpg">
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <li><a href="/gioithieu/gioithieu.html">Giới thiệu</a></li>
+            <li><a href="/dangnhap/dangnhap.html">Đăng nhập</a></li>
+            <li><a href="/lienhe/lienhe.html">Liên hệ</a></li>
+        </ul>
+    </div>
+    <div class="head"><h1>DeliMenu</h1></div>
+    <div class="search">
+        <input type="text" id="searchInput" placeholder="Tìm kiếm mặt hàng...">
+        <button id="searchButton">Search</button>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="img">
+                <img src="/img/Hamburger.jpg">
+                <h2>Hamburger</h2>
+                <p><strong>55.000VND</strong></p>
+                <button onclick="displaySoldOut()">Đặt hàng</button>
+            </div>
+
+            <div class="img">
+                <img src="/img/Pizza.jpg">
+                <h2>Pizza</h2>
+                <p><strong>105.000VND</strong></p>
+                <button onclick="displaySoldOut()">Đặt hàng</button>
+            </div>
+
+            <div class="img">
+                <img src="/img/Spaghetti.jpeg">
+                <h2>Spaghetti</h2>
+                <p><strong>45.000VND</strong></p>
+                <button onclick="displaySoldOut()">Đặt hàng</button>
+            </div>
+
+            <div class="img">
+                <img src="/img/Fried Chicken Rice.jpg">
+                <h2>Fried Chicken Rice</h2>
+                <p><strong>45.000VND</strong></p>
+                <button onclick="displaySoldOut()">Đặt hàng</button>
+            </div>
+
+            <div class="img">
+                <img src="/img/Salad.jpg">
+                <h2>Salad</h2>
+                <p><strong>25.000VND</strong></p>
+                <button onclick="displaySoldOut()">Đặt hàng</button>
+            </div>
+
+            <div class="img">
+                <img src="/img/Nugget.jpg">
+                <h2>Nugget</h2>
+                <p><strong>30.000VND</strong></p>
+                <button onclick="displaySoldOut()">Đặt hàng</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById('searchButton').addEventListener('click', function () {
+            var searchInputValue = document.getElementById('searchInput').value.toLowerCase();
+            var imgContainers = document.querySelectorAll('.img');
+
+            imgContainers.forEach(function (imgContainer) {
+                var h2Text = imgContainer.querySelector('h2').innerText.toLowerCase();
+                if (h2Text.includes(searchInputValue)) {
+                    imgContainer.style.display = 'block';
+                } else {
+                    imgContainer.style.display = 'none';
+                }
+            });
+        });
+    </script>
+    <script>
+        function displaySoldOut() {
+        alert("Đã bán hết!");
+    }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liên hệ</title>
+  <link rel="stylesheet" href="lienhe.css">
+</head>
+<body>
+  <div class="container">
+        <h1>Liên hệ hỗ trợ khách hàng</h1>
+        </ul>
+        <div class="content">
+                <h2>Câu hỏi thường gặp:</h2>
+                    <div class="question1">
+                        <p><strong>Câu hỏi 1:</strong> Nhân viên thái độ không tốt thì phải làm sao?</p>
+                        <p><strong>Trả lời:</strong> Liên hệ với hotline: 0xxxxxx147 hoặc điền vào đơn yêu cầu hỗ trợ.</p>
+                    </div>
+                    <div class="question2">
+                        <p><strong>Câu hỏi 2:</strong> Tìm hiểu uy tín của cửa hàng?</p>
+                        <p><strong>Trả lời:</strong> Bấm vào <span id="clickHere" style="cursor: pointer; text-decoration: underline;">đây</span>.</p>
+                    </div>
+                <h2>Gửi yêu cầu hỗ trợ:</h2>
+                <form action="/contact" method="post">
+                    <input type="text" name="name" placeholder="Tên">
+                    <input type="email" name="email" placeholder="Email">
+                    <input type="text" name="phone" placeholder="Số điện thoại">
+                    <textarea name="message" placeholder="Nội dung yêu cầu hỗ trợ"></textarea>
+                    <button>Gửi yêu cầu</button>
+                </form>
+        </div>
+  </div>
+  <script>
+    document.getElementById('clickHere').addEventListener('click', function () {
+        displaySoldOut();
+    });
+    function displaySoldOut() {
+    alert("Mới mở thì làm gì có uy tín. (●'◡'●)");
+    }
+    </script>
+</body>
+</html>
